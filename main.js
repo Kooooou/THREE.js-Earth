@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import earth from './textures/Earth.png'
-import perticleTexture from './textures/1.png'
+import perticleTexture from './textures/plane.png'
 const init = function(){
   
   const canvas = document.querySelector("#webGL");
