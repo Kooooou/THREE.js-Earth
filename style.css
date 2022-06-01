@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+#webGL {
+  vertical-align: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
