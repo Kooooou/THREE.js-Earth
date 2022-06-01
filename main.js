@@ -20,7 +20,6 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setClearColor(0x000000);
 
-let rot = 0; // rotationの初期化
 const directional = new THREE.DirectionalLight(0xffffff);
 directional.position.set(500,500,100)
 scene.add(directional)
@@ -48,18 +47,18 @@ const pointsMaterial = new THREE.PointsMaterial({
 })
 const perticle = new THREE.Points(geometry,pointsMaterial);
 scene.add(perticle);
-console.log(vercties)
 const material = new THREE.MeshStandardMaterial({
   map:earthTexture,
 })
 const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(300,64,64),
   material,
-)
-scene.add(sphere);
-
-const clock = new THREE.Clock();
-const frameAnime = function () {
+  )
+  scene.add(sphere);
+  
+  let rot = 0;
+  const clock = new THREE.Clock();
+  const frameAnime = function () {
   const elapsdTime = clock.getElapsedTime()
   rot += 0.2
   // ラジアン変換
