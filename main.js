@@ -25,9 +25,7 @@ directional.position.set(500,500,100)
 scene.add(directional)
 const point = new THREE.PointLight(0xffffff,2,1000);
 scene.add(point);
-// ヘルパー光源
-const helper = new THREE.PointLightHelper(point,10);
-scene.add(helper);
+
 const texture = new THREE.TextureLoader();
 const earthTexture = texture.load(earth);
 const perticleImgae = texture.load(perticleTexture)
